@@ -5,6 +5,7 @@ A python script for creating the parameters required for a unique genesis block.
     sudo pip install scrypt construct==2.5.2
 
 if locale.Error: unsupported locale setting happend, you can try
+    
     export LC_ALL=C
 
 To create geneses based on X11 algorithm you will also need to install the [xcoin-hash](https://github.com/lhartikk/xcoin-hash) module. 
