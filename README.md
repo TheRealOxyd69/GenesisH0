@@ -8,7 +8,7 @@ if locale.Error: unsupported locale setting happend, you can try
     
     export LC_ALL=C
 
-To create geneses based on X11 algorithm you will also need to install the [xcoin-hash](https://github.com/lhartikk/xcoin-hash) module. 
+To create geneses based on X11 algorithm you will also need to install the [xcoin-hash](https://github.com/didys/xcoin-hash) module. 
 For X13 you will need the [x13_hash](https://github.com/sherlockcoin/X13-PythonHash) module and for X15 the [x15_hash](https://github.com/minings/x15_hash) module.
     
 ### Examples
