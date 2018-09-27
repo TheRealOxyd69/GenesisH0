@@ -34,7 +34,23 @@ Create the regtest genesis hash found in Bitcoin
 Create the original genesis hash found in Litecoin
 
     python genesis.py -a scrypt -z "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56" -p "040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9" -t 1317972665 -n 2084524493
-    
+
+Create the original genesis hash found in Bitcoin Green
+
+    python genesis.py -a quark-hash -z "Even With Energy Surplus, Canada Unable to Meet Electricity Demands of Bitcoin Miners" -t 1516926684 -v 0 -p 04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
+
+Output:
+         * algorithm: quark-hash
+         * merkle hash: 07cbcacfc822fba6bbeb05312258fa43b96a68fc310af8dfcec604591763f7cf
+         * pszTimestamp: Even With Energy Surplus, Canada Unable to Meet Electricity Demands of Bitcoin Miners
+         * pubkey: 04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
+         * time: 1516926684
+         * bits: 0x1e0ffff0
+         * Searching for genesis hash..
+         * 16525.0 hash/s, estimate: 72.2 hgenesis hash found!
+         * nonce: 21256609
+         * genesis_hash: 000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b
+         
 Create a unique genesis hash with custom pszTimestamp
 
     python genesis.py -a scrypt -z "Time flies like an arrow. Fruit flies like a banana."
@@ -61,7 +77,7 @@ Create the original genesis hash found in HiroCoin (requires [xcoin-hash](https:
          the first value of the nonce that will be incremented
          when searching the genesis hash
       -a ALGORITHM, --algorithm=ALGORITHM
-         the PoW algorithm: [SHA256|scrypt|X11|X13|X15]
+         the PoW algorithm: [SHA256|scrypt|X11|X13|X15|quark-hash|argon2-hash|xevan_hash]
       -p PUBKEY, --pubkey=PUBKEY
          the pubkey found in the output script
       -v VALUE, --value=VALUE
