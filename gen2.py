@@ -238,4 +238,3 @@ def announce_found_genesis(genesis_hash, nonce):
  
 # GOGOGO!
 main()
-root
